@@ -36,7 +36,7 @@ def main():
     '''Printing answer'''
 
     ievade = input("Ievdi F vai I:")
-    if ievade == 'F':
+    if "F" in ievade:
         # filepath = input("Ievadi faila celu:")
         text = input()
         with open (text) as fp:
@@ -44,7 +44,7 @@ def main():
             mismatch = find_mismatch(text)
             print(mismatch)
 
-    elif ievade == 'I':
+    if "I" in ievade:
             text = input()
             mismatch = find_mismatch(text)
             print(mismatch)
@@ -53,3 +53,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
