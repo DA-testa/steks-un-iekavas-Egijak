@@ -8,7 +8,7 @@ Bracket = namedtuple("Bracket", ["char", "position"])
 
 
 def are_matching(left, right):
-    '''L'''
+    '''L.'''
     return (left + right) in ["()", "[]", "{}"]
 
 def find_mismatch(text):
@@ -45,12 +45,11 @@ def main():
             print(mismatch)
 
     elif ievade == 'I':
-        text = input()
-        mismatch = find_mismatch(text)
-        print(mismatch)
+            text = input()
+            mismatch = find_mismatch(text)
+            print(mismatch)
     # Printing answer, write your code here
 
 
 if __name__ == "__main__":
     main()
-
